@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: gainsboro;
+    width: 99vw;
+    min-width: 580px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vw;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    width: 110px;
+    display: inline block;
+}
+
+header a:hover{
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+#inicial{
+    background: url(../imagem/hotel.jpg)no-repeat center;
+    background-size: cover;
+    height: 60vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#inicial h2{
+    font-size: 52px;
+    margin: 2%;
+}
+
+#inicial a{
+    width: 150px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+
+    animation-name: botao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+#inicial a:hover{
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+
+@keyframes botao{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#reservar{
+    background: #6f7075;
+    color: white;
+    width: 80vw;
+    height: 15vh;
+    border-radius: 8px;
+    margin: -7.5vw auto 0vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#reservar div{
+    width: 40%;
+}
+
+#reservar input[type="date"]{
+    width: 95%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#reservar input[type="submit"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+}
+
+#reservar h3{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#reservar p{
+    font-size: 0.4m;
+}
+
+#quarto{
+    height: 45vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#quarto .quarto.imagem{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+
+.suite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1%;
+    width: 25vh;
+}
+
+.suite h6, h4{
+    font-weight: 400;
+}
+
+.suite h4{
+    font-size: 20px;
+}
+
+.suite h6{
+    font-size: 13px;
+}
+
+.suite img{
+    
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.suite img:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+#servicos{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+    border: 1px solid purple;
+}
+
+#servicos .nossos-servicos{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nossos-servicos div{
+    background: gainsboro;
+    width: 30vh;
+    height: 10vh;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.oferecidos{
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+    
+}
+.oferecidos img{
+    width: 30%;
+}
+
+.oferecidos:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.oferecidos p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#inscrever{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inscrever h2{
+    font-size: 30px;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translatex(0PX);
+    }
+    75%{
+        transform: translatex(30px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+#inscrever input{
+    background: white;
+    height: 3vh;
+}
+
+#inscrever inpute[type="test"]{
+    width: 20vh;
+}
+
+#inscrever inpute[type="email"]{
+    width: 30vh;
+}
+
+#inscrever inpute[type="submit"]{
+    background: white;
+    color: gainsboro;
+    width: 13vw;
+}
+
+.botao{
+    position: fixed;
+    top: 0;
+    right: 2%;
+    height: 100vh;
+}
+
+.botao-home{
+    position: relative;
+    top: 85vh;
+    width: 70%;
+}
+
+footer{
+    background-color: gray;
+}
+
+
+
+
+
